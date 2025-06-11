@@ -1,0 +1,96 @@
+/* Container for the whole page */
+.register-container {
+    max-width: 405px;
+    margin: 120px auto;
+    padding: 0 20px;
+    background-color: transparent;  
+    box-shadow: none;               
+    border: none;                   
+    border-radius: 0;               
+  }
+  
+  
+  /* Heading */
+  .register-container h1 {
+    text-align: center;
+    margin-bottom: 55px;
+
+  }
+  
+  /* Form itself */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Groups of form elements */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  /* Inputs, selects, etc. */
+  .form-input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  .checkbox-label{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: transparent;
+    font-size: 1rem;
+    background-color: transparent;
+    margin-bottom: -10px;
+    margin-top: -15px;
+    margin-left: -10px;
+}
+  .form-input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* Submit button */
+  button[type='submit'] {
+    background-color: #166719;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #45a049;
+  }
+  
+
+  .logo-container {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    z-index: 1000;
+  }
+  .login-route{
+    display: flex;
+    justify-content: center;
+
+  }
+  /* Responsive behavior */
+  @media (max-width: 600px) {
+    .register-container {
+      margin: 30px 16px;
+      padding: 30px 20px;
+    }
+  }
+  

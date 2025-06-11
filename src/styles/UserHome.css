@@ -1,0 +1,58 @@
+.user-home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+
+  .header-bar {
+    height: 60px; 
+    flex-shrink: 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  
+  .left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  .left-column {
+    width: 35%;
+    background-color: #f9fafb;
+    gap: 1rem;
+  }
+  
+  .right-column {
+    width: 65%;
+    background-color: #ffffff;
+    gap: 1rem;
+  }
+  
+  .left-column > div,
+  .right-column > div {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+
+  .chart-wrapper {
+    transform: scale(0.85); 
+    transform-origin: top center;
+  }
+  

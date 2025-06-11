@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+  
+.dashboard {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.search-bar {
+  width: 95%;
+  max-width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.info h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.chart-placeholder {
+  background: #ddd;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.timeframe-options button {
+  background: #eee;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.buy-button {
+  background: #4CAF50;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.trending ul, .holdings {
+  list-style: none;
+  padding: 0;
+}
+
+.trending li {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 5px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  background-color: #ffe5e5;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 15px;
+    max-width: 90%; /* Allow the dashboard to take up more width on smaller screens */
+  }
+
+  .search-bar {
+    padding: 12px;
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .info h2 {
+    font-size: 18px;
+  }
+
+  .chart-placeholder {
+    height: 120px;
+  }
+
+  .timeframe-options button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .buy-button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .trending {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+  }
+
+  .trending ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .trending li {
+    display: inline-block;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    margin: 0;
+  }
+}
+
+/* Very small screens (mobile phones in portrait) */
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 10px;
+    max-width: 95%;
+  }
+
+  .search-bar {
+    padding: 10px;
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  .info h2 {
+    font-size: 16px;
+  }
+
+  .chart-placeholder {
+    height: 200px;
+  }
+
+  .timeframe-options button {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+  }
+
+  .buy-button {
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+}
+

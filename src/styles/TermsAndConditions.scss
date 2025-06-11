@@ -1,0 +1,146 @@
+$primary-color: #333;
+$secondary-color: #666;
+$light-gray: #D3D3D3;
+$border-color: #e1e1e1;
+.terms {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: $primary-color;
+  line-height: 1.6;
+
+  &__card {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 2rem; 
+    box-shadow: none;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__ticker {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    div {
+      width: 20px;
+      height: 2px;
+      background-color: #000;
+    }
+    
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      padding: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: $light-gray;
+      }
+    }
+  }
+
+  &__content {
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    color: $secondary-color;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  &__introduction {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__section {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 1rem;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+
+    &-content {
+      padding: 0.5rem 0 1rem;
+
+      p {
+        font-size: 1rem;
+        color: $primary-color;
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+  
+// Responsive adjustments for mobile
+@media (max-width: 768px) {
+  .terms {
+    padding: 1rem 0.25rem;
+    
+    &__card {
+      padding: 1rem 0;
+    }
+    
+    &__title {
+      font-size: 1.5rem;
+    }
+    
+    &__section {
+      &-header {
+        h2 {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
