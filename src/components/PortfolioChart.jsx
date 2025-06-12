@@ -20,6 +20,7 @@ export default function PortfolioChart() {
   const [portfolio, setPortfolio] = useState([]);
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
+  console.log("API base URL:", process.env.NEXT_PUBLIC_API_BASE_URL);
   useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/portfolio`, {
       method: 'GET',
