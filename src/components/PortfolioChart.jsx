@@ -21,7 +21,7 @@ export default function PortfolioChart() {
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/some-endpoint`, {
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/portfolio`, {
       method: 'GET',
       credentials: 'include',
     })
@@ -41,7 +41,7 @@ export default function PortfolioChart() {
     }));
     setPortfolio(sanitizedPortfolio);
     console.log(sanitizedPortfolio);
-    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/some-endpoint`, {
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/portfolio`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
